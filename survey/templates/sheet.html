@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Attending</th>
+                <th>Bringing</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for inputLine in result %}
+            <tr>
+                <td>{{ inputLine["name"] }}</td>
+                <td>{{ inputLine["attending"] }}</td>
+                <td>{{ inputLine["bringing"]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

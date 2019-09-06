@@ -1,0 +1,62 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Form</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+    <h1>bait rayk app!</h1>
+        
+      <div class="form-group">
+        <label for="nameInput">name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+      </div>
+      <!-- radio buttons-->
+      
+      <div class="radio">
+        are you coming?
+    <input type="radio" class="radio" name="radio" value="yes" id="y" />
+    <label for="y">Yes</label>
+    <input type="radio" class="radio" name="radio" value="no" id="n" />
+    <label for="z">No</label>
+  </div>
+  
+  <div class="menu">
+    <select name="menu">
+    <option value="0">select what to bring:</option>
+    <option value="1">chicken</option>
+    <option value="2">rice</option>
+    <option value="3">potatoes</option>
+    <option value="4">2 chalah</option>
+    <option value="5">ketshup</option>
+    <option value="6">plates+napkins</option>
+    <option value="7">2 drinks</option>
+    <option value="8">2 drinks</option>
+    <option value="9">cutlary</option>
+    <option value="10">shnitzel</option>
+    <option value="11">cake</option>
+    
+  </select>
+  </div>
+     
+    <!-- 
+    
+    
+      
+      
+      
+      
+            <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        /* TODO */
+
+    </script>
+
+{% endblock %}
